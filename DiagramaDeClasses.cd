@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="ControleFrotasDLL.BLL.Aluguel">
+    <Position X="13.75" Y="3.5" Width="1.5" />
+    <Members>
+      <Property Name="ListaProdutos" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAFgRCACAAAACAQAAAAEAABABIAAAAABAAAACA=</HashCode>
+      <FileName>BLL\Aluguel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Seguro" />
+      <Property Name="VeiculoEmpresa" />
+      <Property Name="ClienteJuridico" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.Cliente">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <Members>
+      <Property Name="ConfirmarSenha" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CAACAAAQwCBAACAAAAAAAACAACAAAAAAAAACAAEREAw=</HashCode>
+      <FileName>BLL\Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.Colaborador">
+    <Position X="16.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAAAEAAAQ=</HashCode>
+      <FileName>BLL\Colaborador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.Contato">
+    <Position X="16.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>BLL\Contato.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.Despesa">
+    <Position X="6.25" Y="8" Width="1.5" />
+    <AssociationLine Name="Cliente" Type="ControleFrotasDLL.BLL.Cliente" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="8" />
+        <Point X="7" Y="7.831" />
+        <Point X="7" Y="7.831" />
+        <Point X="7" Y="7.488" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.11" Y="0.06" Height="0.182" Width="0.696" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAQBAAAgAACAAAAAAAAAAAACAAAQQAEAAAg=</HashCode>
+      <FileName>BLL\Despesa.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UnidadeMedida" />
+      <Property Name="Cliente" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.FaturaAluguel">
+    <Position X="10.75" Y="5" Width="1.5" />
+    <Members>
+      <Property Name="ListaProdutos" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAEAAIAAAAEQAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLL\FaturaAluguel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Aluguel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.ItemsRegistro">
+    <Position X="1.25" Y="7.25" Width="1.5" />
+    <Members>
+      <Property Name="Id" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAAAAAAAAAAAAABAAAAEAAgAAAQAAAAAAg=</HashCode>
+      <FileName>BLL\ItemsRegistro.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RegistroDespesa" />
+      <Property Name="Despesa" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.Marca">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Marca" Hidden="true" />
+      <Property Name="Modelos" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>BLL\Marca.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.Modelo">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Modelo" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACABABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>BLL\Modelo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Marca" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.NewsletterEmail">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLL\NewsletterEmail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.RegistroDespesa">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <Members>
+      <Property Name="ListaProdutos" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Cliente" Type="ControleFrotasDLL.BLL.Cliente" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="4.5" />
+        <Point X="2.75" Y="4.5" />
+        <Point X="2.75" Y="5.438" />
+        <Point X="6.25" Y="5.438" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="VeiculoCliente" Type="ControleFrotasDLL.BLL.VeiculoCliente" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="3.812" />
+        <Point X="3.75" Y="3.812" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Motorista" Type="ControleFrotasDLL.BLL.Motorista" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="0.875" Y="5.315" />
+        <Point X="0.875" Y="6.568" />
+        <Point X="0.875" Y="6.568" />
+        <Point X="0.875" Y="10.75" />
+        <Point X="9" Y="10.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQADAEAAgQAAAAAAAACAAAIAAAAAQBAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLL\RegistroDespesa.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cliente" />
+      <Property Name="VeiculoCliente" />
+      <Property Name="Motorista" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.Veiculo">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Veiculo" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAAAAAAAAAAAAAAABUAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>BLL\Veiculo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Modelo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.VeiculoCliente">
+    <Position X="3.75" Y="3" Width="1.5" />
+    <Members>
+      <Property Name="Registros" Hidden="true" />
+      <Method Name="VeiculoCliente" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Veiculo" Type="ControleFrotasDLL.BLL.Veiculo" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.25" Y="3" />
+        <Point X="4.25" Y="2.312" />
+        <Point X="7" Y="2.312" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Cliente" Type="ControleFrotasDLL.BLL.Cliente" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="4.488" />
+        <Point X="4.5" Y="4.75" />
+        <Point X="6.25" Y="4.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAABAAAAABCAAAAAAAAAEAAAAAEAAAAAAAA=</HashCode>
+      <FileName>BLL\VeiculoCliente.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Veiculo" />
+      <Property Name="Cliente" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.VeiculoEmpresa">
+    <Position X="13.5" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="VeiculoEmpresa" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Veiculo" Type="ControleFrotasDLL.BLL.Veiculo" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.5" Y="1.375" />
+        <Point X="8.5" Y="1.375" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAIAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>BLL\VeiculoEmpresa.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Veiculo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.TransacaoPagarMe">
+    <Position X="18.25" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>oCNTAEEEgAIIIAAMIOAAABCEIkGAEAgOgBAAMgEEACA=</HashCode>
+      <FileName>BLL\TransacaoPagarMe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.ClienteFisico">
+    <Position X="3.25" Y="6" Width="1.5" />
+    <AssociationLine Name="Cliente" Type="ControleFrotasDLL.BLL.Cliente" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="4.75" Y="6.812" />
+        <Point X="6.25" Y="6.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAACAAAAgACAAAAAACAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>BLL\ClienteFisico.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cliente" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.ClienteJuridico">
+    <Position X="9" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAEAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>BLL\ClienteJuridico.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cliente" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.Fornecedor">
+    <Position X="10.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgCAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>BLL\Fornecedor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.Seguro">
+    <Position X="13.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgAAAAAAAAEAAAAAAAAAAAAAAAAAACAAEAAAA=</HashCode>
+      <FileName>BLL\Seguro.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Fornecedor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.UnidadeMedida">
+    <Position X="3" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>BLL\UnidadeMedida.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControleFrotasDLL.BLL.Motorista">
+    <Position X="9" Y="9.5" Width="1.5" />
+    <AssociationLine Name="Cliente" Type="ControleFrotasDLL.BLL.Cliente" ManuallyRouted="true">
+      <Path>
+        <Point X="9.688" Y="9.5" />
+        <Point X="9.688" Y="7" />
+        <Point X="7.75" Y="7" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAgACAAAEAACAACAACAAAAAAAAAAg=</HashCode>
+      <FileName>BLL\Motorista.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cliente" />
+      <Property Name="clienteJuridico" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
